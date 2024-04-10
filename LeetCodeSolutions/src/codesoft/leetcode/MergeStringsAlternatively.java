@@ -20,7 +20,6 @@ public class MergeStringsAlternatively {
 			 i++;
 			 j++;
 		 }
-		
 		 return mergedWord.toString();
 	    }
 	

@@ -10,62 +10,6 @@ public class GreatestCommonDivisorOfStrings {
 			}
 			int gcd = gcd(str1.length(),str2.length());
 			return str1.substring(0,gcd);
-			
-			
-//	     	String s;
-//			int maxLength = Math.max(str1.length(), str2.length());
-//	        if(str1.length()==str2.length() && str1.equalsIgnoreCase(str2)){
-//	            System.out.println("inside equals");
-//	            return "";
-//	        }
-//			if(str1.length()==maxLength && str1.contains(str2)) {
-//				System.out.println(str1.contains(str2));
-//				if(str1.length()/2<str2.length()) {
-//					System.out.println("inside if");
-//					int i =0;
-//					int j = str1.length()/2;
-//					while(i<=str1.length()/2){
-//						System.out.println("inside while");
-//					str1.contains(str2.subSequence(0,j));
-//					s = str1.replace(str2.substring(0, j), "");
-//					System.out.println(s.length());
-//					if(s.length()==0) {
-//						return str2.substring(0, j);
-//					}
-//					j--;
-//					i++;
-//					}
-//				}
-//				s = str1.replace(str2, "");
-//				if(s.length()==0) {
-//					return str2;
-//				}
-//			}else if(str2.length()==maxLength && str2.contains(str1)) {
-//				if(str2.length()/2<str1.length()) {
-//					System.out.println("inside if");
-//					int i =0;
-//					int j = str2.length()/2;
-//					while(i<=str2.length()/2){
-//						System.out.println("inside while");
-//					str1.contains(str1.subSequence(0,j));
-//					s = str2.replace(str1.substring(0, j), "");
-//					System.out.println(s+"a");
-//					if(s.length()==0) {
-//						return str1.substring(0, j);
-//					}
-//					j--;
-//					i++;
-//					}
-//				}
-//	            
-//	            s = str2.replace(str2, "");
-//	            System.out.println(s+"a");
-//				if(s.length()==0) {
-//					return str1;
-//				}
-//			}
-//			
-//			return "";
 	}
 
 	private static int gcd(int a, int b) {
@@ -83,3 +27,5 @@ public class GreatestCommonDivisorOfStrings {
 	}
 
 }
+
+

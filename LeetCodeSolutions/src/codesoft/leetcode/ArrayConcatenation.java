@@ -4,29 +4,42 @@ import java.util.Arrays;
 
 public class ArrayConcatenation {
 	
-	public static int[] getConcatenation(int[] a) {
-		int[] con = new int[a.length*2];
-		int j=0;
-		for(int i=0;i<con.length;i++) {
-			
-			if(j<a.length) {
-				con[i]=a[j];
-				j++;
-			}else {
-				j=0;
-				con[i]=a[j];
-				j++;
+	public static int numIdenticalPairs(int[] a) {
+		int counter = 0;
+		for(int i=0;i<a.length;i++) {
+			for(int j=i+1;j<a.length;j++) {
+				if(a[i]==a[j]) {
+					counter++;
+				}
 			}
-			
 		}
-		return con;
+		return counter;
 	}
+//	public static int[] getConcatenation(int[] a) {
+//		int[] con = new int[a.length*2];
+//		int j=0;
+//		for(int i=0;i<con.length;i++) {
+//			
+//			if(j<a.length) {
+//				con[i]=a[j];
+//				j++;
+//			}else {
+//				j=0;
+//				con[i]=a[j];
+//				j++;
+//			}
+//			
+//		}
+//		return con;
+//	}
 	
 	public static void main(String[] args) {
-		int[] a = {1,2,3};
-		
-		int[] result = getConcatenation(a);
-		System.out.println(Arrays.toString(result));
+		int[] a = {1,2,3,1,1,3};
+		System.out.println(numIdenticalPairs(a));
+//		int[] a = {1,2,3};
+//		
+//		int[] result = getConcatenation(a);
+//		System.out.println(Arrays.toString(result));
 	}
 }
 
