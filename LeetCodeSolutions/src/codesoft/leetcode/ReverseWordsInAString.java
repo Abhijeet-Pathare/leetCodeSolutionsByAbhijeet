@@ -4,18 +4,29 @@ import java.util.Collections;
 
 public class ReverseWordsInAString {
 	
+	public static void reverseWordsInAString(String str) {
+		if(str.length()==0 || str.isBlank()) {
+			System.out.println("String should not be empty");
+			return;
+		}
+		String s = str.trim();
+		String[] wordsArray = s.split(" ");
+		StringBuffer sb = new StringBuffer();
+		for(int i=wordsArray.length-1;i>=0;i--) {
+			sb.append(wordsArray[i]+" ");
+		}
+		sb.toString().trim();//removes the extra white spaces
+		System.out.println("Reversed String");
+		System.out.println(sb);
+		}
+	
 	public static void main(String[] args) {
-	 String s1 = "Purple";
-	 String s2 = "P"+"urple";
-	 System.out.println(s1==s2);
-	 System.out.println(s1.equals(s2));
 		
-				
+		String s = " a  ";//"    I am Abhijeet";
+		reverseWordsInAString(s);
 		
-//		String s = "    I am Abhijeet";
-//		
 //		String str = s.trim();
-//		String[] str1 = str.split("\\s+");//this returns an array of strings excluding spaces. i.e words
+//		String[] str1 = str.split(" ");//this returns an array of strings excluding spaces. i.e words
 //		StringBuffer sb = new StringBuffer();//StringBuffer as strings are not mutable
 //		for(String s1 : str1) {
 //			System.out.println(s1);
