@@ -10,19 +10,29 @@ import java.util.stream.Stream;
 public class Demo1 {
 	
 	public static void main(String[] args) {
-		String[] arr = new String[]{"m", "u","u", "m","b","a","i"};
-		Map<String,Integer> map = new HashMap<>();
-		for(int i=0;i<arr.length;i++) {
-			if(map.containsKey(arr[i])) {
-				int a = map.get(arr[i]);
-				map.put(arr[i], ++a);
-				
-			}else {
-				map.put(arr[i], 1);
-			}
+		
+		char[] arr = new char[3];
+		arr[0]='a';
+		arr[1]= 'b';
+		arr[2]=Integer.toString(1).charAt(0);
+		for(char ch:arr) {
+			System.out.println(ch);
 		}
-		System.out.println(map);
-		Stream s = Stream.of(arr);
+		
+		
+//		String[] arr = new String[]{"m", "u","u", "m","b","a","i"};
+//		Map<String,Integer> map = new HashMap<>();
+//		for(int i=0;i<arr.length;i++) {
+//			if(map.containsKey(arr[i])) {
+//				int a = map.get(arr[i]);
+//				map.put(arr[i], ++a);
+//				
+//			}else {
+//				map.put(arr[i], 1);
+//			}
+//		}
+//		System.out.println(map);
+//		Stream s = Stream.of(arr);
 		
 		
 //		Stream<String> streamOfArrayFull = Arrays.stream(arr);
